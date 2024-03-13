@@ -1,4 +1,4 @@
-import react, { useState, useRef } from 'react';
+import  { useState, useRef } from 'react';
 import axios from 'axios';
 import { Container,  H1, Image, ContainerItens, InputLabel, Input, Button } from './styles'
 import People from '../../assets/people.svg'
