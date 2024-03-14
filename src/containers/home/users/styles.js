@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import background1 from '../../assets/backgraund1.svg'
+import background2 from '../../../assets/backgraund2.svg'
 
 export const Container = styled.div`
-background: url('${background1}');
+background: url('${background2}');
 background-size: cover;
 display: flex;
 flex-direction: column;
@@ -23,6 +23,7 @@ background: linear-gradient(
     rgba(255, 255, 255, 0.15) 100%
 );
 border-radius: 61px 61px 0px 0px;
+backdrop-filter: blur(45px);
 padding: 50px 36px;
 display: flex;
 flex-direction: column;
@@ -39,40 +40,15 @@ color: #FFFFFF;
 margin-bottom: 80px;
 `;
 
-export const InputLabel = styled.p`
-color: #EEEEEE;
-margin-left: 20px;
-letter-spacing:-0.41px;
-line-height: 22px;
-font-weight: 700px;
-font-size:18px;
-`;
-
-export const Input = styled.input`
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-background: rgba(255, 255, 255, 0.25);
-border-radius: 14px;
-margin-bottom: 25px;
-border: none ;
-outline: none;
-padding-left:25px;
-Width:342px;
-Height:58px;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-color: #ffffff;
-`;
 
 export const Button= styled.button`
-background: rgba(0, 0, 0, 0.8);
+background: transparent;
 width: 342px;
 height: 58px;
 border-radius: 14px;
-border: none;
+border: 1px solid #ffffff;
 
-margin: 50px 10px 50px 10px;
+margin-top: 120px ;
 
 color: #ffffff;
 font-style: normal;
@@ -86,13 +62,15 @@ align-items: center;
 justify-content: center;
 gap: 20px;
 
-£:hover{
+&:hover{
     opacity: 0.8;
 }
-£:active{
+&:active{
     opacity: 0.5;
 }
-
+img{
+    transform: rotateY(180deg);
+}
 `;
 
 export const User= styled.li`

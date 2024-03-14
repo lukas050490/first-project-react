@@ -6,7 +6,7 @@ import Arrow from '../../assets/arrow.svg'
 
 
 
-const App = () => {
+const Home = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
@@ -47,4 +47,4 @@ const App = () => {
 
             }
 
-  export default App;
+  export default Home;

@@ -86,10 +86,10 @@ align-items: center;
 justify-content: center;
 gap: 20px;
 
-£:hover{
+&:hover{
     opacity: 0.8;
 }
-£:active{
+&:active{
     opacity: 0.5;
 }
 

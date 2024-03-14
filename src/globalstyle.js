@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const globalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle `
 
 * {
 margin: 0;
@@ -9,4 +9,4 @@ box-sizing: border-box;
 font-family: "Roboto", sans-serif;
 }
 `;
-export default globalStyle
+export default GlobalStyle
