@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, User, H1, Image, ContainerItens, Button } from './styles'
 import Avatar from '../../../assets/avatares.svg'
@@ -49,7 +49,7 @@ const Users = () => {
             ))}
 
           </ul>
-          <Button >
+          <Button to= '/' >
            <img alt='seta' src={Arrow} /> Voltar
           </Button>
         </ContainerItens>

@@ -1,4 +1,4 @@
-import  { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import { Container,  H1, Image, ContainerItens, InputLabel, Input, Button } from './styles'
 import People from '../../assets/people.svg'
@@ -36,7 +36,7 @@ const Home = () => {
           <InputLabel>Idade</InputLabel>
           <Input ref={inputAge} placeholder='Idade' />
 
-          <Button onClick={addNewUser}>
+          <Button to='/usuarios' onClick={addNewUser}>
             Cadastrar <img alt='seta' src={Arrow} />
           </Button>
 
