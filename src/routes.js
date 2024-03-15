@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes , Route, } from 'react-router-dom';
+import { BrowserRouter as Router, Routes , Route,  } from 'react-router-dom';
 
 import Home from './containers/home'
-import Users from './containers/home/users'
+import Users from './containers/users'
 
 function AppRoutes(){
 
 return(
 <Router>
  <Routes>
-<Route exact path='/' component={Home}/>
-<Route exact path='/usuarios' Component={Users}/>
+<Route  path='/' element={<Home/>}/>
+<Route  path='/usuarios' element={<Users/>}/>
 </Routes>
 </Router>
 )
