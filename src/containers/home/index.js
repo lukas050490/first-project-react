@@ -1,15 +1,19 @@
 import React, { useState, useRef } from 'react';
-import { UseNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
-import { Container, H1, Image, ContainerItens, InputLabel, Input, Button } from './styles'
-import People from '../../assets/people.svg'
-import Arrow from '../../assets/arrow.svg'
+import { Container, Image, InputLabel, Input } from './styles';
+import People from '../../assets/people.svg';
+import Arrow from '../../assets/arrow.svg';
+
+import H1 from '../../components/title';
+import ContainerItens from '../../components/containerItens';
+import Button from '../../components/Button';
 
 const Home = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
-  const navigate = UseNavigate();
+  const navigate = useNavigate(); 
 
   async function addNewUser() {
     try {
